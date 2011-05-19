@@ -1,0 +1,50 @@
+
+<h1><%= @recipe.name %></h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @recipe.user_id %>
+</p>
+
+<p>
+  <b>User name:</b>
+  <%= @recipe.user_name %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @recipe.name %>
+</p>
+
+<p>
+  <b>Is veg:</b>
+  <%= @recipe.is_veg %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @recipe.category %>
+</p>
+<p>
+  <b>Sub Category:</b>
+  <%= @recipe.sub_category %>
+</p>
+<p>
+  <b>Steps:</b>
+  <%= @recipe.steps %>
+</p>
+<p>
+  <b>Comments:</b>
+  <%= @recipe.comments %>
+</p>
+<p>
+  <b>Tag:</b>
+  <%= @recipe.tag %>
+</p>
+  <b>Rating:</b>
+  <%= @recipe.rating %>
+</p>
+<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+<%= link_to 'Back', recipes_path %>
