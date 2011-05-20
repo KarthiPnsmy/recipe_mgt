@@ -1,4 +1,5 @@
 class UserProfilesController < ApplicationController
+  before_filter :protect
   # GET /user_profiles
   # GET /user_profiles.xml
   def index

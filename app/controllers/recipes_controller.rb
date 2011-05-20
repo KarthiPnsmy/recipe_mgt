@@ -1,4 +1,6 @@
 class RecipesController < ApplicationController
+  before_filter :protect
+  
   # GET /recipes
   # GET /recipes.xml
   def index

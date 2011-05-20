@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  before_filter :protect, :except => [:new, :create]
+  
   # GET /users
   # GET /users.xml
   def index
